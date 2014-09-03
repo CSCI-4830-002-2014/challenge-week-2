@@ -34,7 +34,7 @@ Alexander Tsankov
 
 ### Q1. (3 points)
 
-The hostnames refer to different servers. There seems to be three different webservers (www1,www2,www3) listed in the tutorial data for the same website and the host field is used to differentiate them. 
+The hostnames refer to different servers. There seems to be three different web servers (www1,www2,www3) listed in the tutorial data for the same website and the host field is used to differentiate them. 
 
 ### Q2. (3 points)
 
@@ -46,7 +46,7 @@ The pipe operator is carry over from BASH and it allows the user to chain togeth
 
 ### Q4. (3 points)
 
-fill-in-your-answer
+Sometimes if the data is being collected in either large amounts or very quickly, a structural database might not be able to keep track of all of the transactions and we might instead turn towards an application like Splunk which would allow us to do analysis of the actual server logs. This would also reuqire lower overhead because we wouldn't be managing a database on top of the server, we would only be logging the server data and possibly having Splunk on a different machine doing analysis retroactively. 
 
 # Challenges
 
