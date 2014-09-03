@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Chris Wittenberg
 
 # How many points have you earned?
 
@@ -10,7 +10,7 @@ write-your-name
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Lo-Fi Guitar Pedal](http://www.instructables.com/id/Lo-fi-Arduino-Guitar-Pedal/)
 
 # Checkpoints
 
