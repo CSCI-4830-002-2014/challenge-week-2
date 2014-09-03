@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Alexander Tsankov
 
 # How many points have you earned?
 
@@ -34,15 +34,15 @@ write-your-name
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+The hostnames refer to different servers. There seems to be three different webservers (www1,www2,www3) listed in the tutorial data for the same website and the host field is used to differentiate them. 
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+The status field referes to the HTTP status code of the transaction, with 200 being considered OK and the transaction going through properly. 
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+The pipe operator is carry over from BASH and it allows the user to chain together multiple results from different querys and feed them as input into different applications easily. 
 
 ### Q4. (3 points)
 
