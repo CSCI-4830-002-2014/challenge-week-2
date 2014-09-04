@@ -108,19 +108,19 @@ sourcetype=access_* | stats distinct_count(productId), values(productId) as "Uni
 
 ## Challenge 2-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | top clientip
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | top date_wday limit=3
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | top productId
 ```
 ![image](image.png?raw=true)
 
