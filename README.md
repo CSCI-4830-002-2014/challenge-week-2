@@ -129,12 +129,15 @@ sourcetype=access_* productId cart.do |
 
 ## Challenge 2-d (2 points)
 ```
+sourcetype=access_* date_wday=Friday productId cart.do | 
+	table clientip, action, productId, date_month, date_mday, date_wday| top productId by date_wday
 ```
-![image](image.png?raw=true)
+![image](C2Challenge2d.png?raw=true)
 
 ## Challenge 2-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* action=purchase date_wday=Friday productId cart.do | 
+	table clientip, action, productId, date_month, date_mday, date_wday| top productId by date_wday
 ```
 ![image](image.png?raw=true)
 
@@ -147,9 +150,10 @@ sourcetype=access_* action=purchase productId  cart.do |
 
 ## Challenge 2-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* action=purchase productId cart.do | 
+	table clientip, action, productId, date_month, date_mday, date_wday|top limit=1  productId by date_wday
 ```
-![image](image.png?raw=true)
+![image](C2Challenge2g.png?raw=true)
 
 ## Challenge 3-a (2 points)
 ```
