@@ -1,16 +1,16 @@
 # Name
 
-write-your-name
+Justin McBride
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Doctoring devices](http://www.economist.com/news/technology-quarterly/21615070-easy-access-technology-and-lower-cost-entry-are-creating-crowd-startups)
 
 # Checkpoints
 
