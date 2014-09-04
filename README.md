@@ -4,7 +4,7 @@ Chris Wittenberg
 
 # How many points have you earned?
 
-56/100
+62/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -107,26 +107,28 @@ sourcetype=access_* [fill-in-the-rest]
 
 ## Challenge 2-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | 
+	table clientip, action, productId, date_month, date_mday, date_wday | top clientip
 ```
-![image](image.png?raw=true)
+![image](C2Challenge2a.png?raw=true)
 
 ## Challenge 2-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | 
+	table clientip, action, productId, date_month, date_mday, date_wday | top limit=3 date_wday
 ```
-![image](image.png?raw=true)
+![image](C2Challenge2b.png?raw=true)
 
 ## Challenge 2-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | 
+	table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
-![image](image.png?raw=true)
+![image](C2Challenge2c.png?raw=true)
 
 
 ## Challenge 2-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
 ```
 ![image](image.png?raw=true)
 
@@ -138,9 +140,10 @@ sourcetype=access_* [fill-in-the-rest]
 
 ## Challenge 2-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* action=purchase productId  cart.do | 
+	table clientip, action, productId, date_month, date_mday, date_wday | top limit=1 productId
 ```
-![image](image.png?raw=true)
+![image](C2Challenge2f.png?raw=true)
 
 ## Challenge 2-g (2 points)
 ```
