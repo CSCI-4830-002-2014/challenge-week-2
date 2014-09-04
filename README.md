@@ -52,55 +52,56 @@ Sometimes if the data is being collected in either large amounts or very quickly
 
 ## Challenge 1-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count
+
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events"
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events", c(eval(action="purchase")) AS "Purchases"
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events", c(eval(action="purchase")) AS "Purchases", c(eval(action="addtocart")) AS "Add to Cart",c(eval(action="remove")) AS "Remove"
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) AS "MAX"
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) AS "MAX", min(bytes) AS "MIN", avg(bytes) AS "AVG"
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats distinct_count(productId), values(productId) as "UniqueProducts"
 ```
 ![image](image.png?raw=true)
 
