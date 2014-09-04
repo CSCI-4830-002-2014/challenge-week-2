@@ -4,7 +4,7 @@ Chris Wittenberg
 
 # How many points have you earned?
 
-62/100
+68/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -139,7 +139,7 @@ sourcetype=access_* date_wday=Friday productId cart.do |
 sourcetype=access_* action=purchase date_wday=Friday productId cart.do | 
 	table clientip, action, productId, date_month, date_mday, date_wday| top productId by date_wday
 ```
-![image](image.png?raw=true)
+![image](C2Challenge2e.png?raw=true)
 
 ## Challenge 2-f (2 points)
 ```
