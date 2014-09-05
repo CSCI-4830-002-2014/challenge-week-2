@@ -151,13 +151,13 @@ sourcetype=access_* [fill-in-the-rest]
 
 ## Challenge 3-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count(action) BY dates
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart distinct_count(clientip) by days
 ```
 ![image](image.png?raw=true)
 
