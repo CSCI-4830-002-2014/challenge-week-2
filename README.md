@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Jake White
 
 # How many points have you earned?
 
@@ -16,7 +16,7 @@ write-your-name
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/2XMPilw)
 
 ## Checkpoint 2 (5 points)
 
