@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Dawson Botsford
 
 # How many points have you earned?
 
@@ -10,7 +10,7 @@ write-your-name
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Powerduino](http://lifehacker.com/build-your-own-smart-powerstrip-with-an-arduino-1573480006)
 
 # Checkpoints
 
