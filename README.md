@@ -16,15 +16,15 @@ Dawson Botsford
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/IEmLX1X.png)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/vXwGEds.png)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/LAaA1Uw.png)
 
 ## Checkpoint 4 (5 points)
 
