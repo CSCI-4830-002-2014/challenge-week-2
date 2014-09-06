@@ -88,25 +88,25 @@ sourcetype=access_* | stats max(bytes)
 
 ## Challenge 1-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
-![c1-f](c1-f.png?raw=true)
+![c1-f](c1-e.png?raw=true)
 
 ## Challenge 1-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) as MAX
 ```
 ![c1-g](c1-g.png?raw=true)
 
 ## Challenge 1-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) as MAX, min(bytes) as MIN, avg(bytes) as AVG
 ```
 ![c1-h](c1-h.png?raw=true)
 
 ## Challenge 1-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats distinct_count(productId) as NumberOfUniqueProducts, values(productId) as UniqueProducts
 ```
 ![c1-i](c1-i.png?raw=true)
 
