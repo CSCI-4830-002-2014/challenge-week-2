@@ -1,16 +1,16 @@
 # Name
 
-write-your-name
+Alexia Newgord
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Game, Set, Big Data: Technology Makes Mark on U.S. Open](http://blogs.wsj.com/cio/2014/09/02/game-set-big-data-technology-makes-mark-on-u-s-open/?KEYWORDS=big+data)
 
 # Checkpoints
 
