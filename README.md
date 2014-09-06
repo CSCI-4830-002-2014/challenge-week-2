@@ -67,39 +67,39 @@ sourcetype=access_* | stats count AS "Events"
 
 ## Challenge 1-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS Views, count(eval(action="purchase")) AS Purchases
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/sfoAw4o.png)
 
 ## Challenge 1-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS Views, count(eval(action="purchase")) AS Purchases, count(eval(action="addtocart")) AS AddToCarts, count(eval(action="remove")) AS Removes
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/KwCnBQF.png)
 
 ## Challenge 1-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/AMhr6cr.png)
 
 ## Challenge 1-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/AMhr6cr.png)
 
 ## Challenge 1-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) as MAX
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/ffidYVp.png)
 
 ## Challenge 1-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) as MAX, min(bytes) as MIN, avg(bytes) as AVG
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/3FkelBY.png)
 
 ## Challenge 1-i (2 points)
 ```
