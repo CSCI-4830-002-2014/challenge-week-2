@@ -34,19 +34,19 @@ Irfan Nadiadi
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+WWW1, WWW2, and WWW3 are subdomains of the Buttercupgames website, possibly to act as mirrors. This may be for load balancing to distribute operations between multiple websites, allowing for faster distribution of content.
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+Status=200 represents the HTTP status code '200' which is the standard response for a successful HTTP request. This is in contrast to codes such as '404' - Not found, or '500' - Internal server error, to further describe the result of an HTTP request.
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+Use of the pipe in Splunk queries allows chaining of search queries to allow for more dynamic results. In the tutorial example,  the use of the pipe allowed us to write 'one' query that first found the top customer, then queried for his/her purchases.
 
 ### Q4. (3 points)
 
-fill-in-your-answer
+Retroactively analyzing product purchase behaviors from the raw logs allows you to understand trends with sales, but also helps you better manage your website to ensure maximum uptime and that content delivery is successful. It wouldn't be practical to save every behavior in a structural database because (ideally) the website should be working as expected, so a large amount of the data would carry little significance. We are primarily concerned with finding the instances when something unexpected happened, so it is easier to parse through the raw logs to find those.
 
 # Challenges
 
