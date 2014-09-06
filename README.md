@@ -53,9 +53,9 @@ fill-in-your-answer
 
 ## Challenge 1-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/j3AdDwT.png)
 
 ## Challenge 1-b (2 points)
 ```
