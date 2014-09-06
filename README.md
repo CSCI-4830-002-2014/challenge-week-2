@@ -157,51 +157,51 @@ sourcetype=access_* action=purchase productId cart.do |
 
 ## Challenge 3-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | timechart count(action)
 ```
-![image](image.png?raw=true)
+![image](C2Challenge3a.png?raw=true)
 
 ## Challenge 3-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count(clientip) As "UniqueID's"
 ```
-![image](image.png?raw=true)
+![image](C2Challenge3b.png?raw=true)
 
 ## Challenge 3-c (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![image](C2Challenge3c.png?raw=true)
 
 ## Challenge 3-d (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![image](C2Challenge3d.png?raw=true)
 
 ## Challenge 3-e (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![image](C2Challege3e.png?raw=true)
 
 ## Challenge 3-f (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![image](C2Challenge3f.png?raw=true)
 
 ## Challenge 3-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count(clientip) As "UniqueID's" by clientip
 ```
-![image](image.png?raw=true)
+![image](C2Challeng3g.png?raw=true)
 
 ## Challenge 3-h (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![image](C2Challenge3h.png?raw=true)
 
 ## Challenge 3-i (2 points)
 ```
