@@ -32,25 +32,33 @@ Alexia Newgord
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+In the tutorial data provided by Splunk, what do the host names www1, www2, and www3 mean? Why are there three?
+
+The three different "www"s are different hosts.  There are three different names to specify which host to access.
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+What is the purpose of including “status=200” in queries?
+
+"status=200" indicates success, so it excludes failed processes.
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+What is your best guess as the rationale behind the heavy use of the | (pipe) operator in Splunk queries?
+
+The usage of the pipe allows query statements to be more specific on what we are accessing.  Without the pipe, we would likely need to run two separate queries, which could be a hassle.
 
 ### Q4. (3 points)
 
-fill-in-your-answer
+Why does one ever need to analyze “product purchase” behaviors from raw server logs retroactively? Why can’t we just save every behavior in a structural database?
+
+We may need to analyze behaviors retroactively to identify issues throughout the user experience.  At the same time, using a structural database may be too heavyweight and potentially slow for the purposes and format of the raw server logs.
 
 # Challenges
 
 ## Challenge 1-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count
 ```
 ![c1-a](c1-a.png?raw=true)
 
