@@ -113,44 +113,44 @@ sourcetype=access_* | stats distinct_count(productId) as NumberOfUniqueProducts,
 
 ## Challenge 2-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | top clientip
 ```
 ![c2-a](c2-a.png?raw=true)
 
 ## Challenge 2-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_*  productId cart.do | top date_wday limit=3
 ```
 ![c2-b](c2-b.png?raw=true)
 
 ## Challenge 2-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* action="*" | top productId
 ```
 ![c2-c](c2-c.png?raw=true)
 
 
 ## Challenge 2-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_*  date_wday=friday action="*" | top productId
 ```
 ![c2-d](c2-d.png?raw=true)
 
 ## Challenge 2-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_*  date_wday=friday action="purchase" | top productId
 ```
 ![c2-e](c2-e.png?raw=true)
 
 ## Challenge 2-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* action="purchase" | top productId limit=1
 ```
 ![c2-f](c2-f.png?raw=true)
 
 ## Challenge 2-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_*  action="purchase" | top productId by date_wday limit=1
 ```
 ![c2-g](c2-g.png?raw=true)
 
