@@ -103,9 +103,9 @@ sourcetype=access_* | stats max(bytes) as MAX, min(bytes) as MIN, avg(bytes) as 
 
 ## Challenge 1-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats, dc(productId) AS NumberOfUniqueProducts, values(productId)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/IPFc9qd.png)
 
 
 ## Challenge 2-a (2 points)
