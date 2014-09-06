@@ -153,9 +153,10 @@ sourcetype=access_* productId cart.do action="purchase"|
 
 ## Challenge 2-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do action="purchase"| 
+	table clientip, action, productId, date_month, date_mday, date_wday | top productId by date_wday limit="1"
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/7s7U5RQ.png)
 
 ## Challenge 3-a (2 points)
 ```
