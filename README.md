@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Irfan Nadiadi
 
 # How many points have you earned?
 
@@ -16,19 +16,19 @@ write-your-name
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/XAv3XnH.png)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/OzjIYK4.png)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/fnWHDBS.png)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/9gK2Csu.png)
 
 ## Study Questions (3 points x 4 = 12 points)
 
