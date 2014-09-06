@@ -46,7 +46,7 @@ What is the purpose of including “status=200” in queries?
 
 What is your best guess as the rationale behind the heavy use of the | (pipe) operator in Splunk queries?
 
-The usage of the pipe allows query statements to be more specific on what we are accessing.  Without the pipe, we would likely need to run two separate queries, which could be a hassle.
+The usage of the pipe sends the output of one command to the input of another, which allows query statements to be more specific on what we are accessing.  Without the pipe, we would likely need to run two separate queries, which could be a hassle.
 
 ### Q4. (3 points)
 
@@ -64,25 +64,25 @@ sourcetype=access_* | stats count
 
 ## Challenge 1-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count as Events
 ```
 ![c1-b](c1-b.png?raw=true)
 
 ## Challenge 1-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count as Events, count(eval(action="purchase")) as Purchases
 ```
 ![c1-c](c1-c.png?raw=true)
 
 ## Challenge 1-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count as Events, count(eval(action="purchase")) as Purchases, count(eval(action="addtocart")) as AddToCarts, count(eval(action="remove")) as Removes
 ```
 ![c1-d](c1-d.png?raw=true)
 
 ## Challenge 1-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
 ![c1-e](c1-e.png?raw=true)
 
