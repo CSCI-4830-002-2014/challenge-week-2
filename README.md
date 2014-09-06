@@ -24,11 +24,12 @@ Dawson Botsford
 
 ## Checkpoint 3 (5 points)
 
+Keep in mind my data dates and sizes of sets were not the same as theirs.
 ![image](http://i.imgur.com/LAaA1Uw.png)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/jNutZcL.png)
 
 ## Study Questions (3 points x 4 = 12 points)
 
@@ -38,11 +39,11 @@ fill-in-your-answer
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+200 is the HTTP status code is the "OK" sign. This means the HTTP request succeeded.
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+Similar to bash, the pipe concantenates actions so that the output of one filter becomes the input of another. This creates a very specific output because we can sort, cut, concatenate more data, etc. all to the original returned data.
 
 ### Q4. (3 points)
 
