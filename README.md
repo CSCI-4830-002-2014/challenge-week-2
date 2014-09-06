@@ -1,16 +1,16 @@
 # Name
 
-write-your-name
+Brian Newsom
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[SUGARCUBE, A GRID BASED MUSIC CONTROLLER WITH ACCELEROMETER](http://blog.arduino.cc/2014/05/02/sugarcube-a-grid-based-music-controller/#more-9342)
 
 # Checkpoints
 
@@ -36,19 +36,19 @@ Note: Here I used the day before I downloaded the data, a filter of 'Yesterday' 
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+The three different www's are used for load balancing.  A user is redirected to one of the 3 servers so that there is less traffic on a single server and thus less stress. 
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+Using status=200 filters out the errors in this log. 200 Is their success error code so forcing it will remove all warnings and errors.
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+I would guess the pipe operator is used in reflection of linux's pipe '|' which tunnels the stdout of one program to the stdin of the next.  A similar thing is done in Splunk that allows Splunk to send it's tables to the next query, likely before the first is fully complete.  This is just a guess though.
 
 ### Q4. (3 points)
 
-fill-in-your-answer
+Saving and analyzing product data real time may be an unrealistic goal depending on the scale of the operations.  Collecting logs real time allows us to create batch views and examine larger datasets reasonably and filter them however is deemed necessary.  A structural database will quickly break down at today's scale of velocity and storage size.
 
 # Challenges
 
