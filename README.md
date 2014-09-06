@@ -6,17 +6,15 @@ Alexia Newgord
 
 100/100
 
-(Make your own calculation and replace the number 0 with the points you think you've earned.)
-
 # Show and tell (10 points)
 
-[Game, Set, Big Data: Technology Makes Mark on U.S. Open](http://blogs.wsj.com/cio/2014/09/02/game-set-big-data-technology-makes-mark-on-u-s-open/?KEYWORDS=big+data)
+[Build a Wireless Home Security System With an Arduino](http://lifehacker.com/build-a-wireless-home-security-system-with-an-arduino-1619435213)
 
 # Checkpoints
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![cp1](cp1.png?raw=true)
 
 ## Checkpoint 2 (5 points)
 
