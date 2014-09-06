@@ -18,15 +18,15 @@ Alexia Newgord
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![cp2](cp2.png?raw=true)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![cp3](cp3.png?raw=true)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![cp5](cp4.png?raw=true)
 
 ## Study Questions (3 points x 4 = 12 points)
 
@@ -52,160 +52,162 @@ fill-in-your-answer
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c1-a](c1-a.png?raw=true)
 
 ## Challenge 1-b (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c1-b](c1-b.png?raw=true)
 
 ## Challenge 1-c (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c1-c](c1-c.png?raw=true)
 
 ## Challenge 1-d (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c1-d](c1-d.png?raw=true)
 
 ## Challenge 1-e (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c1-e](c1-e.png?raw=true)
 
 ## Challenge 1-f (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c1-f](c1-f.png?raw=true)
 
 ## Challenge 1-g (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c1-g](c1-g.png?raw=true)
 
 ## Challenge 1-h (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c1-h](c1-h.png?raw=true)
 
 ## Challenge 1-i (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c1-i](c1-i.png?raw=true)
 
 
 ## Challenge 2-a (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c2-a](c2-a.png?raw=true)
 
 ## Challenge 2-b (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c2-b](c2-b.png?raw=true)
 
 ## Challenge 2-c (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c2-c](c2-c.png?raw=true)
 
 
 ## Challenge 2-d (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c2-d](c2-d.png?raw=true)
 
 ## Challenge 2-e (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c2-e](c2-e.png?raw=true)
 
 ## Challenge 2-f (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c2-f](c2-f.png?raw=true)
 
 ## Challenge 2-g (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c2-g](c2-g.png?raw=true)
 
 ## Challenge 3-a (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c3-a](c3-a.png?raw=true)
 
 ## Challenge 3-b (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c3-b](c3-b.png?raw=true)
 
 ## Challenge 3-c (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c3-c](c3-c.png?raw=true)
 
 ## Challenge 3-d (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c3-d](c3-d.png?raw=true)
 
 ## Challenge 3-e (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c3-e](c3-e.png?raw=true)
 
 ## Challenge 3-f (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c3-f](c3-f.png?raw=true)
 
 ## Challenge 3-g (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c3-g](c3-g.png?raw=true)
 
 ## Challenge 3-h (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c3-h](c3-h.png?raw=true)
 
 ## Challenge 3-i (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c3-i](c3-i.png?raw=true)
 
 ## Challenge 4-a (4 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![c4-a](c4-a.png?raw=true)
 
 ## Challenge 4-b (4 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
+
+![c4-b](c4-b.png?raw=true)
