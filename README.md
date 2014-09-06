@@ -25,7 +25,7 @@ Dawson Botsford
 ## Checkpoint 3 (5 points)
 
 Keep in mind my data dates and sizes of sets were not the same as theirs.
-Data issues fixed for the challenges, but search filtering language was still learned with broken data :)
+Data issues fixed for the challenges, but exact search integer results were still wrong with broken data :)
 
 ![image](http://i.imgur.com/LAaA1Uw.png)
 
