@@ -31,7 +31,7 @@ It is interesting, as you can see, on "view" and "purchase" actions, most (about
 
 ## Checkpoint 4 (5 points)
 
-![image](https://dl-web.dropbox.com/get/Public/Screen%20Shot%202014-09-07%20at%204.34.18%20PM.png?_subject_uid=44502811&w=AADj_FI02ycOZV1rqQ-pOPOTqFoqoGRITwPoIomqUBfwjA)
+![image](http://imgur.com/WcOkGD4.png)
 
 ## Study Questions (3 points x 4 = 12 points)
 
