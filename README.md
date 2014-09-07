@@ -181,7 +181,7 @@ sourcetype=access_* productId=* | timechart count(action) by productId
 
 ## Challenge 3-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | timechart count(action) by productId useother=f usenull=f limit=16
 ```
 ![image](image.png?raw=true)
 
