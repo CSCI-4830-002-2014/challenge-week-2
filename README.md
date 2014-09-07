@@ -175,7 +175,7 @@ sourcetype=access_* productId=*| timechart span=1hr count(clientip) As "UniqueID
 
 ## Challenge 3-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count(clientip) As "UniqueIDs" by host
 ```
 ![image](C2Challenge3d.png?raw=true)
 
