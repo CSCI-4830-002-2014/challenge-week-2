@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Adrian Chen
 
 # How many points have you earned?
 
@@ -10,7 +10,7 @@ write-your-name
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Turn Signal Jacket](http://www.instructables.com/id/turn-signal-biking-jacket/)
 
 # Checkpoints
 
