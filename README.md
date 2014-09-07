@@ -16,19 +16,19 @@ Alexander Tsankov
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/3EGKh7i)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/J8yCy4f)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/6SYAtwk)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/EyfF5rd)
 
 ## Study Questions (3 points x 4 = 12 points)
 
@@ -55,56 +55,54 @@ Sometimes if the data is being collected in either large amounts or very quickly
 sourcetype=access_* | stats count
 
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/QCICgiR)
 
 ## Challenge 1-b (2 points)
 ```
 sourcetype=access_* | stats count AS "Events"
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/hqafIHp)
 
 ## Challenge 1-c (2 points)
 ```
 sourcetype=access_* | stats count AS "Events", c(eval(action="purchase")) AS "Purchases"
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/EsV1epu)
 
 ## Challenge 1-d (2 points)
 ```
 sourcetype=access_* | stats count AS "Events", c(eval(action="purchase")) AS "Purchases", c(eval(action="addtocart")) AS "Add to Cart",c(eval(action="remove")) AS "Remove"
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/4Ysjnsc)
 
 ## Challenge 1-e (2 points)
 ```
 sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/UlJwUNn)
 
 ## Challenge 1-f (2 points)
 ```
 sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
-
+[Imgur](http://i.imgur.com/UlJwUNn)
 ## Challenge 1-g (2 points)
 ```
 sourcetype=access_* | stats max(bytes) AS "MAX"
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/24ogoaB)
 
 ## Challenge 1-h (2 points)
 ```
 sourcetype=access_* | stats max(bytes) AS "MAX", min(bytes) AS "MIN", avg(bytes) AS "AVG"
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/lc6Nme7)
 
 ## Challenge 1-i (2 points)
 ```
 sourcetype=access_* | stats distinct_count(productId), values(productId) as "UniqueProducts"
 ```
-![image](image.png?raw=true)
-
+[Imgur](http://i.imgur.com/Qmm0qlD)
 
 ## Challenge 2-a (2 points)
 ```
