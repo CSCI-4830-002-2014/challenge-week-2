@@ -139,13 +139,13 @@ sourcetype=access_* productId cart.do date_wday=friday action=purchase| top prod
 
 ## Challenge 2-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do action=purchase| top productId limit=1
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do action=purchase| top productId by date_wday limit=1
 ```
 ![image](image.png?raw=true)
 
