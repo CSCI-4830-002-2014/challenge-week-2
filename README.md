@@ -108,108 +108,108 @@ sourcetype=access_* | stats distinct_count(productId), values(productId) as "Uni
 ```
 sourcetype=access_* productId cart.do | top clientip
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/wvxfVi1)
 
 ## Challenge 2-b (2 points)
 ```
 sourcetype=access_* productId cart.do | top date_wday limit=3
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/QG63A4w)
 
 ## Challenge 2-c (2 points)
 ```
 sourcetype=access_* productId cart.do | top productId
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/WrnpoZP)
 
 
 ## Challenge 2-d (2 points)
 ```
 sourcetype=access_* productId cart.do date_wday=friday | top productId
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/WZnyLda)
 
 ## Challenge 2-e (2 points)
 ```
 sourcetype=access_* productId cart.do date_wday=friday action=purchase| top productId
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/xwULP5t)
 
 ## Challenge 2-f (2 points)
 ```
 sourcetype=access_* productId cart.do action=purchase| top productId limit=1
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/jYed3tL)
 
 ## Challenge 2-g (2 points)
 ```
 sourcetype=access_* productId cart.do action=purchase| top productId by date_wday limit=1
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/jLymNCl)
 
 ## Challenge 3-a (2 points)
 ```
 sourcetype=access_* productId=* | timechart count(action) BY dates
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/OO7qbxs)
 
 ## Challenge 3-b (2 points)
 ```
 sourcetype=access_* productId=* | timechart distinct_count(clientip) by days
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/uccpCVI)
 
 ## Challenge 3-c (2 points)
 ```
 sourcetype=access_* productId=* | timechart distinct_count(clientip) span=hours
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/N6x6hYe)
 
 ## Challenge 3-d (2 points)
 ```
 sourcetype=access_* productId=* | timechart c(action) by host
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/MWRWrmP)
 
 ## Challenge 3-e (2 points)
 ```
 sourcetype=access_* productId=* | timechart count(action) by productId
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/SD2fxbp)
 
 ## Challenge 3-f (2 points)
 ```
 sourcetype=access_* | timechart count(action) by productId useother=f usenull=f limit=16
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/YnAIk1u)
 
 ## Challenge 3-g (2 points)
 ```
 sourcetype=access_* productId=* | timechart count(action) by clientip
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/S38hH5Y)
 
 ## Challenge 3-h (2 points)
 ```
 sourcetype=access_* productId=* | timechart count(action) by clientip useother=f limit=10
 ```
 
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/aMUcjbz)
 
 ## Challenge 3-i (2 points)
 ```
 sourcetype=access_* productId=* | timechart sum(bytes) span=hours
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/68dGIXR)
 
 ## Challenge 4-a (4 points)
 ```
 sourcetype=access_* | rex "(?<mymethod>GET)" | table mymethod, method, _raw |  rex "(?<mymethod>POST)" | table mymethod, method, _raw
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/ufAU2p5)
 
 ## Challenge 4-b (4 points)
 ```
 sourcetype=access_* action | rex "(GET|POST) /cart.do\?action=(?<myaction>(purchase|addtocart|remove|view|remove|purchase|changequantity))" | table myaction, action, _raw
 ```
-![image](image.png?raw=true)
+[Imgur](http://i.imgur.com/ikPMX6a)
