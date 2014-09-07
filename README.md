@@ -54,7 +54,7 @@ Doing this data analysis in real time may be impossible depending on the number 
 ```
 sourcetype=access_* | stats count
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/asmhOLe.png)
 
 ## Challenge 1-b (2 points)
 ```
