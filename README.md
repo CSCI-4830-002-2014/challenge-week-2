@@ -4,7 +4,7 @@ Chris Wittenberg
 
 # How many points have you earned?
 
-68/100
+82/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -64,15 +64,15 @@ sourcetype=access_* | stats count As "Events"
 
 ## Challenge 1-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count As "Events", count(eval(action="purchase")) As "Purchases"
 ```
-![image](image.png?raw=true)
+![image](C2Challenge1c.png?raw=true)
 
 ## Challenge 1-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count As "Events", count(eval(action="purchase")) As "Purchases", count(eval(action="addtocart")) As "AddToCarts", count(eval(action="remove")) As "Removes"
 ```
-![image](image.png?raw=true)
+![image](C2Challenge1d.png?raw=true)
 
 ## Challenge 1-e (2 points)
 ```
@@ -100,9 +100,9 @@ sourcetype=access_* | stats max(bytes) as MAX, min(bytes) as MIN, avg(bytes) As 
 
 ## Challenge 1-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_*   | dedup productId | stats values(productId) As "UniqueIds", count(productId) As "NumberOfUniqueProducts"| table NumberOfUniqueProducts, UniqueIds
 ```
-![image](image.png?raw=true)
+![image](C2Challenge1i.png?raw=true)
 
 
 ## Challenge 2-a (2 points)
@@ -169,7 +169,7 @@ sourcetype=access_* productId=*| timechart count(clientip) As "UniqueID's"
 
 ## Challenge 3-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart span=1hr count(clientip) As "UniqueIDs"
 ```
 ![image](C2Challenge3c.png?raw=true)
 
@@ -199,15 +199,15 @@ sourcetype=access_* productId=*| timechart count(clientip) As "UniqueID's" by cl
 
 ## Challenge 3-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count(clientip) As "UniqueID's" by clientip useother=f
 ```
 ![image](C2Challenge3h.png?raw=true)
 
 ## Challenge 3-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart span=1hr sum(bytes)
 ```
-![image](image.png?raw=true)
+![image](C2Challenge3i.png?raw=true)
 
 ## Challenge 4-a (4 points)
 ```
