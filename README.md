@@ -10,7 +10,7 @@ Jake Charland
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[twitter mood light](http://www.instructables.com/id/Twitter-Mood-Light-The-Worlds-Mood-in-a-Box/)
 
 # Checkpoints
 
