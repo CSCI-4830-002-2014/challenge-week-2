@@ -34,19 +34,19 @@ Jake Charland
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+They are the three different web servers that these logs came from.
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+The purpose of including status=200 in the query is it tells us that the request completed with an http status 200 OK.
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+I believe they used the pipe operator to chain commands together because this is exactly how a command line interface works on all UNIX machines. This is important because most developers are already familiar with this kind of behavior so when using splunk it already feels familiar to them.
 
 ### Q4. (3 points)
 
-fill-in-your-answer
+If you were to store that sort of data in structure on the server it would be very time and memory costly to the server to do so and would not be worth the extra loads on the server. Especially when you have programs like splunk that allow you to query your data so easily.
 
 # Challenges
 
