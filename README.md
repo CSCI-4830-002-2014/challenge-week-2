@@ -4,13 +4,13 @@ Alexander Tsankov
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Arduino powered VR glasses!](http://www.engadget.com/2014/08/08/diy-3d-printed-vr-goggles/)
 
 # Checkpoints
 
