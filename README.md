@@ -4,7 +4,7 @@ Niklas Fejes
 
 # How many points have you earned?
 
-0/100
+20/100
 
 # Show and tell (10 points)
 
@@ -32,19 +32,28 @@ Niklas Fejes
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+The `www1`, `www2` and `www3` host names are typically used to mirror a site so that
+the load balance is distributed over several servers. The `www*` host names on the 
+`buttercupgames` website are basically different servers hosting the same site, and that is
+why they produce three separate logs.
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+The `status=200` inidicates that only events with HTTP status code 200 (OK) should be
+included, which filters out erroneous events from the search.
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+The pipe operator allows for clear distinctions between individual steps in the search. 
+It also makes is easier to chain together searches with the available tools 
+(`stats`, `top` etc.).
 
 ### Q4. (3 points)
 
-fill-in-your-answer
+The raw server logs may be the only available option if you want to analyze purchases 
+for a store that has not yet implemented a structural database. The data from the server
+logs can also be used to cross-check a structural database or add information to the
+database that has not been saved previously.
 
 # Challenges
 
