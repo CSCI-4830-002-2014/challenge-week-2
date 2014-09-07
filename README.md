@@ -163,19 +163,19 @@ sourcetype=access_* productId=* | timechart distinct_count(clientip) by days
 
 ## Challenge 3-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart distinct_count(clientip) span=hours
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart c(action) by host
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count(action)/ by productId
 ```
 ![image](image.png?raw=true)
 
