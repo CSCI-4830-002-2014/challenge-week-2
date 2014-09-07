@@ -217,5 +217,6 @@ sourcetype=access_* | rex "(?<mymethod>GET)" | rex "(?<mymethod>POST)" | table m
 ## Challenge 4-b (4 points)
 ```
 sourcetype=access_* sourcetype=access_* action | rex "(GET|POST) /cart.do\?action=(?<myaction>\w+)" | table myaction, action, _raw
+```
 
 ![c4-b](c4-b.png?raw=true)
