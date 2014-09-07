@@ -4,7 +4,7 @@ Chris Wittenberg
 
 # How many points have you earned?
 
-82/100
+94/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -211,10 +211,17 @@ sourcetype=access_* productId=*| timechart span=1hr sum(bytes)
 
 ## Challenge 4-a (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | rex "(?<mymethod>GET|POST)" | 
+     table mymethod, method, _raw
 ```
-![image](image.png?raw=true)
+![image](C2Challenge4a.png?raw=true)
 
 ## Challenge 4-b (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* action | 
+    rex "(GET|POST) /cart.do\?action=(?<myaction>purchase|addtocart|view)" |
+    table myaction, action, _raw
+
+![image](C2Challenge4b.png?raw=true)
+
+
