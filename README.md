@@ -16,19 +16,19 @@ Adrian Chen
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/iaLRoZZ.png)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/cL8Vl6A.png)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/T2URN5Q.png)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/LwZvAmc.png)
 
 ## Study Questions (3 points x 4 = 12 points)
 
@@ -219,4 +219,4 @@ sourcetype=access_* | rex "(?<mymethod>GET|POST)" | table mymethod, method, _raw
 ```
 sourcetype=access_* | rex "(GET|POST)" /cart.do\?action=(?<myaction>purchase|view|addtocart|remove|changequantity)"| table mymethod, method, _raw
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/E5NT0gH.png)
