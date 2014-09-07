@@ -52,49 +52,49 @@ Retroactively analyzing product purchase behaviors from the raw logs allows you 
 
 ## Challenge 1-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events"
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events" count(eval(action="purchase")) as "Purchases"
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events" count(eval(action="purchase")) as "Purchases" count(eval(action="addtocart")) as "AddToCart" count(eval(action="remove")) as "Removes"
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) AS "MAX"
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 1-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) AS "MAX" min(bytes) AS "MIN" avg(bytes) AS "AVG"
 ```
 ![image](image.png?raw=true)
 
