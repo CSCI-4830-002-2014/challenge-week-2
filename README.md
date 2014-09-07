@@ -206,7 +206,7 @@ sourcetype=access_* [fill-in-the-rest]
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image][Imgur](http://i.imgur.com/MYwKMEz)
+![Imgur](http://i.imgur.com/MYwKMEz)
 
 ## Challenge 4-b (4 points)
 ```
