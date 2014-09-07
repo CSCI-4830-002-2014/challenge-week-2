@@ -157,64 +157,64 @@ sourcetype=access_* action="purchase" productId cart.do |
 
 ## Challenge 3-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart dc(clientip) AS UniqueIPs
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart span=3h dc(clientip) AS UniqueIPs
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by source
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by productId
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by productId limit=16
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by clientip
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by clientip useother=f
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart span=3h sum(bytes)
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 4-a (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | rex "(?<mymethod>GET|POST)" | table mymethod, method, _raw
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 4-b (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | rex "(GET|POST)" /cart.do\?action=(?<myaction>purchase|view|addtocart|remove|changequantity)"| table mymethod, method, _raw
