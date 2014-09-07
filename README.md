@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Jake Charland
 
 # How many points have you earned?
 
@@ -206,7 +206,7 @@ sourcetype=access_* [fill-in-the-rest]
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![image][Imgur](http://i.imgur.com/MYwKMEz)
 
 ## Challenge 4-b (4 points)
 ```
