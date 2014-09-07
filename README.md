@@ -195,7 +195,7 @@ sourcetype=access_* [fill-in-the-rest]
 ```
 sourcetype=access_* productId=*| timechart count(clientip) As "UniqueID's" by clientip
 ```
-![image](C2Challeng3g.png?raw=true)
+![image](C2Challenge3g.png?raw=true)
 
 ## Challenge 3-h (2 points)
 ```
@@ -221,7 +221,7 @@ sourcetype=access_* | rex "(?<mymethod>GET|POST)" |
 sourcetype=access_* action | 
     rex "(GET|POST) /cart.do\?action=(?<myaction>purchase|addtocart|view)" |
     table myaction, action, _raw
-
+```
 ![image](C2Challenge4b.png?raw=true)
 
 
