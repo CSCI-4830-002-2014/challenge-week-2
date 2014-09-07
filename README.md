@@ -1,17 +1,17 @@
 # Name
 
-write-your-name
+Daniel Nolan
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
-
+[Sound Reactive LED Strip](http://www.instructables.com/id/Sound-Reactive-LED-strip/?ALLSTEPS)
+My group in another class is going to make improvements to this concept for a project so if any of you have experience with this maybe you could give me some of your words of wisdom. Any thoughts on this idea would be greatly appreciated!
 # Checkpoints
 
 ## Checkpoint 1 (5 points)
