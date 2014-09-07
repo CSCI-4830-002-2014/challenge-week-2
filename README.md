@@ -171,7 +171,7 @@ sourcetype=access_* productId=*| timechart count(clientip) As "UniqueID's"
 ```
 sourcetype=access_* productId=*| timechart span=1hr count(clientip) As "UniqueIDs"
 ```
-![image](C2Challenge3c.png?raw=true)
+![image](C2Challenge3c2.png?raw=true)
 
 ## Challenge 3-d (2 points)
 ```
