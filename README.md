@@ -100,69 +100,69 @@ sourcetype=access_* | stats max(bytes) AS "MAX" min(bytes) AS "MIN" avg(bytes) A
 
 ## Challenge 1-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats distinct_count(productId) AS "NumberOfUniqueProducts", values(productId)
 ```
 ![image](image.png?raw=true)
 
 
 ## Challenge 2-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | table clientip, action, productId, date_month, date_mday, date_wday | top clientip
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | table clientip, action, productId, date_month, date_mday, date_wday | top date_wday limit=3
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
 ![image](image.png?raw=true)
 
 
 ## Challenge 2-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do date_wday=friday | table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do date_wday=friday action=purchase | table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do action=purchase | table clientip, action, productId, date_month, date_mday, date_wday | top productId limit=1
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do action=purchase | table clientip, action, productId, date_month, date_mday, date_wday | top productId by date_wday limit=1
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart distinct_count(clientip) AS UniqueIPs
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 3-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart span=6h distinct_count(clientip) AS UniqueIPs
 ```
 ![image](image.png?raw=true)
 
