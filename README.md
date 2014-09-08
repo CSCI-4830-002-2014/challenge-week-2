@@ -4,11 +4,11 @@ Niklas Fejes
 
 # How many points have you earned?
 
-20/100
+100/100
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Rubik's Cube Solver](http://www.instructables.com/id/Rubiks-Cube-Solver/)
 
 # Checkpoints
 
@@ -207,6 +207,9 @@ sourcetype=access_* productId=* | timechart count by clientip useother=false
 ```
 sourcetype=access_* productId=* | timechart span=1h sum(bytes)
 ```
+*Note:* To get the same numbers as the challenge description the `productId=*` should be 
+removed. However, this violates the query form specification.
+
 ![image](challenge3i.png?raw=true)
 
 ## Challenge 4-a (4 points)
