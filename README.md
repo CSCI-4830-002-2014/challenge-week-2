@@ -4,7 +4,7 @@ Daniel Nolan
 
 # How many points have you earned?
 
-100/100
+42/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -16,19 +16,23 @@ My group in another class is going to make improvements to this concept for a pr
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/fqBR018)
+
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/RccD6Dz)
+![image](http://imgur.com/W8UmlNv)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/w1R05Ls)
+![image](http://imgur.com/wrXC6bB)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![image](http://imgur.com/KkZayvp)
+![image](http://imgur.com/WTLTi3a)
 
 ## Study Questions (3 points x 4 = 12 points)
 
