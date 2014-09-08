@@ -150,57 +150,57 @@ sourcetype=access_* productId cart.do action="purchase" | table clientip, action
 
 ## Challenge 3-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count
 ```
-![image](image.png?raw=true)
+![image](ch3a.png?raw=true)
 
 ## Challenge 3-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart dc(clientip)
 ```
-![image](image.png?raw=true)
+![image](ch3b.png?raw=true)
 
 ## Challenge 3-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart dc(clientip) span=1h
 ```
-![image](image.png?raw=true)
+![image](ch3c.png?raw=true)
 
 ## Challenge 3-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by host
 ```
-![image](image.png?raw=true)
+![image](ch3d.png?raw=true)
 
 ## Challenge 3-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count by productId
 ```
-![image](image.png?raw=true)
+![image](ch3e.png?raw=true)
 
 ## Challenge 3-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count by productId limit=16
 ```
-![image](image.png?raw=true)
+![image](ch3f.png?raw=true)
 
 ## Challenge 3-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count by clientip
 ```
-![image](image.png?raw=true)
+![image](ch3g.png?raw=true)
 
 ## Challenge 3-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count by clientip useother=f
 ```
-![image](image.png?raw=true)
+![image](ch3h.png?raw=true)
 
 ## Challenge 3-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart span=hr sum(bytes)
 ```
-![image](image.png?raw=true)
+![image](ch3i.png?raw=true)
 
 ## Challenge 4-a (4 points)
 ```
