@@ -196,21 +196,21 @@ sourcetype=access_* productId=*| timechart count by productId limit=16
 
 ## Challenge 3-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count by clientip
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/DpVWgtD.png)
 
 ## Challenge 3-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count by clientip useother=f
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/Tx6cM7E.png)
 
 ## Challenge 3-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart span=hr sum(bytes)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/uzTu36W.png)
 
 ## Challenge 4-a (4 points)
 ```
