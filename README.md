@@ -204,10 +204,13 @@ sourcetype=access_* productId=*| timechart span=hr sum(bytes)
 
 ## Challenge 4-a (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | rex "(?<mymethod>(GET|POST))" | table mymethod, method, _raw
 ```
-![image](image.png?raw=true)
+![image](ch4a.png?raw=true)
 
 ## Challenge 4-b (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* action | rex "(GET|POST) /cart.do\?action=(?<myaction>purchase|addtocart|view|remove|changequantity)" |table myaction, action, _raw
+'''
+
+![image](ch4b.png?raw=true)
