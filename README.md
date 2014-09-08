@@ -16,19 +16,19 @@ Ian Ker-Seymer
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/7gva9czsfyzjtkk/Screenshot%202014-09-07%2019.44.11.png?dl=1)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/2au4zft3s7nr91g/Screenshot%202014-09-07%2019.52.04.png?dl=1)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/tkun8s6dg5bwj8k/Screenshot%202014-09-07%2019.56.06.png?dl=1)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![image](https://www.dropbox.com/s/i33923z0yu093vw/Screenshot%202014-09-07%2020.07.32.png?dl=1)
 
 ## Study Questions (3 points x 4 = 12 points)
 
