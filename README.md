@@ -54,105 +54,105 @@ Retroactively analyzing product purchase behaviors from the raw logs allows you 
 ```
 sourcetype=access_* | stats count
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/4RfdGWr.png)
 
 ## Challenge 1-b (2 points)
 ```
 sourcetype=access_* | stats count AS "Events"
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/cbKHGx8.png)
 
 ## Challenge 1-c (2 points)
 ```
 sourcetype=access_* | stats count AS "Events" count(eval(action="purchase")) as "Purchases"
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/ZHq374v.png)
 
 ## Challenge 1-d (2 points)
 ```
 sourcetype=access_* | stats count AS "Events" count(eval(action="purchase")) as "Purchases" count(eval(action="addtocart")) as "AddToCart" count(eval(action="remove")) as "Removes"
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/PMNAdEM.png)
 
 ## Challenge 1-e (2 points)
 ```
 sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/cmjSccD.png)
 
 ## Challenge 1-f (2 points)
 ```
 sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/cmjSccD.png)
 
 ## Challenge 1-g (2 points)
 ```
 sourcetype=access_* | stats max(bytes) AS "MAX"
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/OjViMSG.png)
 
 ## Challenge 1-h (2 points)
 ```
 sourcetype=access_* | stats max(bytes) AS "MAX" min(bytes) AS "MIN" avg(bytes) AS "AVG"
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/K1XEwJo.png)
 
 ## Challenge 1-i (2 points)
 ```
 sourcetype=access_* | stats distinct_count(productId) AS "NumberOfUniqueProducts", values(productId)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/AnwnzcV.png)
 
 
 ## Challenge 2-a (2 points)
 ```
 sourcetype=access_* productId cart.do | table clientip, action, productId, date_month, date_mday, date_wday | top clientip
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/LlOTRAH.png)
 
 ## Challenge 2-b (2 points)
 ```
 sourcetype=access_* productId cart.do | table clientip, action, productId, date_month, date_mday, date_wday | top date_wday limit=3
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/WAnXkW3.png)
 
 ## Challenge 2-c (2 points)
 ```
 sourcetype=access_* productId cart.do | table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/WesTCa5.png)
 
 
 ## Challenge 2-d (2 points)
 ```
 sourcetype=access_* productId cart.do date_wday=friday | table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/5EMkdAt.png)
 
 ## Challenge 2-e (2 points)
 ```
 sourcetype=access_* productId cart.do date_wday=friday action=purchase | table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/yShHTCa.png)
 
 ## Challenge 2-f (2 points)
 ```
 sourcetype=access_* productId cart.do action=purchase | table clientip, action, productId, date_month, date_mday, date_wday | top productId limit=1
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/sNnjQiW.png)
 
 ## Challenge 2-g (2 points)
 ```
 sourcetype=access_* productId cart.do action=purchase | table clientip, action, productId, date_month, date_mday, date_wday | top productId by date_wday limit=1
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/lPE4uKT.png)
 
 ## Challenge 3-a (2 points)
 ```
 sourcetype=access_* productId=* | timechart count
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/GqxAHUf.png)
 
 ## Challenge 3-b (2 points)
 ```
