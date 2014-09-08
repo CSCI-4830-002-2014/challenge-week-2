@@ -34,19 +34,19 @@ Justin McBride
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+The differing www1, www2, www3 hostnames refer to the server that the data is coming from. Internal server management differentiates the servers using this prefix.
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+This addition in the search query ensures that we're only looking at succesful queries to the server, and not transactions that may have been in progress but failed, and other similar situtations.
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+We use the pipe to be able to perform searches upon larger search result sets, and it kind of seems like a replacement, or at least complement, to a logical join.
 
 ### Q4. (3 points)
 
-fill-in-your-answer
+Server logs may be the only thing recoverable after server crashes or accidental database destruction. The raw info we obtain can rebuild the database. Additionally, sometimes structured databases can become slow and too full of data to be effective.
 
 # Challenges
 
