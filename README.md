@@ -1,213 +1,229 @@
 # Name
 
-write-your-name
+Dawson Botsford
+(received help from Brian Newsom on some)
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Photoresistor color sensor](http://www.georgegardner.info/electronics/arduino/photoresistor-color-sensing-with-the-arduino.html)
 
 # Checkpoints
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/IEmLX1X.png)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/vXwGEds.png)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+Keep in mind my data dates and sizes of sets were not the same as theirs.
+Data issues fixed for the challenges, but exact search integer results were still wrong with broken data :)
+
+![image](http://i.imgur.com/LAaA1Uw.png)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/jNutZcL.png)
 
 ## Study Questions (3 points x 4 = 12 points)
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+World Wide Web 1, 2, and 3. These are the three web hosts that traffic can be routed through to distribute traffic better. This balances the loads.
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+200 is the HTTP status code is the "OK" sign. This means the HTTP request succeeded.
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+Similar to bash, the pipe concantenates actions so that the output of one filter becomes the input of another. This creates a very specific output because we can sort, cut, concatenate more data, etc. all to the original returned data.
 
 ### Q4. (3 points)
 
-fill-in-your-answer
+If your operation is on a massive scale, you cannot simply save each thing into a database due to time, storage capacity, and other resources.
 
 # Challenges
 
 ## Challenge 1-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/j3AdDwT.png)
 
 ## Challenge 1-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events"
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/J14Rin8.png)
 
 ## Challenge 1-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS Views, count(eval(action="purchase")) AS Purchases
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/sfoAw4o.png)
 
 ## Challenge 1-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS Views, count(eval(action="purchase")) AS Purchases, count(eval(action="addtocart")) AS AddToCarts, count(eval(action="remove")) AS Removes
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/KwCnBQF.png)
 
 ## Challenge 1-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/AMhr6cr.png)
 
 ## Challenge 1-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/AMhr6cr.png)
 
 ## Challenge 1-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) as MAX
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/ffidYVp.png)
 
 ## Challenge 1-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) as MAX, min(bytes) as MIN, avg(bytes) as AVG
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/3FkelBY.png)
 
 ## Challenge 1-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats, dc(productId) AS NumberOfUniqueProducts, values(productId)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/IPFc9qd.png)
 
 
 ## Challenge 2-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | 
+	table clientip, action, productId, date_month, date_mday, date_wday | top clientip
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/1PHBvc1.png)
 
 ## Challenge 2-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | 
+	table clientip, action, productId, date_month, date_mday, date_wday | top date_wday limit=3
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/wCW3xtZ.png)
 
 ## Challenge 2-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | 
+	table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/5alMdBU.png)
 
 
 ## Challenge 2-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do date_wday="friday" | 
+	table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/NLZ8NJu.png)
 
 ## Challenge 2-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do date_wday="friday" action="purchase"| 
+	table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/UoCxlsF.png)
 
 ## Challenge 2-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do action="purchase"| 
+	table clientip, action, productId, date_month, date_mday, date_wday | top productId limit="1"
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/rfj84RA.png)
 
 ## Challenge 2-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do action="purchase"| 
+	table clientip, action, productId, date_month, date_mday, date_wday | top productId by date_wday limit="1"
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/7s7U5RQ.png)
 
 ## Challenge 3-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/qRjRNYf.png)
 
 ## Challenge 3-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart dc(clientip)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/Qcp5WRg.png)
 
 ## Challenge 3-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart dc(clientip) span=1h
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/rVmdnSU.png)
 
 ## Challenge 3-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count(action) by host
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/2cRQ6BL.png)
 
 ## Challenge 3-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count by productId
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/D2szicc.png)
 
 ## Challenge 3-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count by productId limit=16
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/DSKrx8x.png)
 
 ## Challenge 3-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count by clientip
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/DpVWgtD.png)
 
 ## Challenge 3-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count by clientip useother=f
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/Tx6cM7E.png)
 
 ## Challenge 3-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart span=hr sum(bytes)
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/uzTu36W.png)
 
 ## Challenge 4-a (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | rex "(?<mymethod>GET|POST)" | 
+     table mymethod, method, _raw
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/PClaTeB.png)
 
 ## Challenge 4-b (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* action | 
+    rex "(GET|POST) /cart.do\?action=(?<myaction>purchase|addtocart|view|remove|changequantity)" |
+    table myaction, action, _raw
+```
+![image](http://i.imgur.com/zY0ZVQ9.png)
