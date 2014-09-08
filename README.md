@@ -157,62 +157,68 @@ sourcetype=access_* productId cart.do action=purchase | top limit=1 productId by
 
 ## Challenge 3-a (2 points)
 ```
+sourcetype=access_* productId=* | timechart count
 ```
 ![image](challenge3a.png?raw=true)
 
 ## Challenge 3-b (2 points)
 ```
+sourcetype=access_* productId=* | timechart dc(clientip) AS "UniqueIPs"
 ```
 ![image](challenge3b.png?raw=true)
 
 ## Challenge 3-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart span=1h dc(clientip) AS "UniqueIPs"
 ```
-![image](image.png?raw=true)
+![image](challenge3c.png?raw=true)
 
 ## Challenge 3-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by host
 ```
-![image](image.png?raw=true)
+![image](challenge3d.png?raw=true)
 
 ## Challenge 3-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by productId
 ```
-![image](image.png?raw=true)
+![image](challenge3e.png?raw=true)
 
 ## Challenge 3-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart limit=0 count by productId
 ```
-![image](image.png?raw=true)
+![image](challenge3f.png?raw=true)
 
 ## Challenge 3-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by clientip
 ```
-![image](image.png?raw=true)
+![image](challenge3g.png?raw=true)
 
 ## Challenge 3-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by clientip useother=false
 ```
-![image](image.png?raw=true)
+![image](challenge3h.png?raw=true)
 
 ## Challenge 3-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart span=1h sum(bytes)
 ```
-![image](image.png?raw=true)
+![image](challenge3i.png?raw=true)
 
 ## Challenge 4-a (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | rex "(?<mymethod>(GET|POST))" | table mymethod, method, _raw
 ```
-![image](image.png?raw=true)
+![image](challenge4a.png?raw=true)
 
 ## Challenge 4-b (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* action | 
+    rex "(GET|POST) /cart.do\?action=(?<myaction>[a-z]*)" |
+    table myaction, action, _raw
+```
+![image](challenge4b.png?raw=true)
