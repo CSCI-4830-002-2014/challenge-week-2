@@ -4,7 +4,7 @@ Daniel Nolan
 
 # How many points have you earned?
 
-42/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -58,11 +58,11 @@ We need to analyze “product purchase” behaviors from raw server logs retroac
 ```
 sourcetype=access_* | stats count
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/6sAUlMp.png)
 
 ## Challenge 1-b (2 points)
 ```
-sourcetype=access_* stats count AS "Events"
+sourcetype=access_* | stats count as "Events"
 ```
 ![image](image.png?raw=true)
 
@@ -70,7 +70,7 @@ sourcetype=access_* stats count AS "Events"
 ```
 sourcetype=access_* | stats count AS "Events", c(eval(action="purchase")) AS "Purchased"
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/yC6JJXl.png)
 
 ## Challenge 1-d (2 points)
 ```
@@ -114,7 +114,7 @@ sourcetype=access_* stats  dc(productId) as NumberofUniqueProducts ,values(produ
 ```
 sourcetype=access_* productId cart.do | top date_wday limit=3
 ```
-![image](image.png?raw=true)
+![image](.png)
 
 ## Challenge 2-b (2 points)
 ```
