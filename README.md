@@ -157,64 +157,66 @@ sourcetype=access_* productId cart.do action=purchase | table clientip, action, 
 ```
 sourcetype=access_* productId=* | timechart count(action) by host
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/OWA7Q2r.png)
 
 ## Challenge 3-b (2 points)
 ```
 sourcetype=access_* productId=* | timechart dc(clientip) AS "UniqueIPs"
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/NiRWQvz.png)
 
 ## Challenge 3-c (2 points)
 ```
 sourcetype=access_* productId=* | timechart span=1h dc(clientip) AS "UniqueIPs"
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/6ayIswK.png)
 
 ## Challenge 3-d (2 points)
 ```
 sourcetype=access_* productId=* | timechart count by host
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/mGTXM4e)
 
 ## Challenge 3-e (2 points)
 ```
 sourcetype=access_* productId=* | timechart count by productId
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/bi2OhMS.png)
 
 ## Challenge 3-f (2 points)
 ```
 sourcetype=access_* productId=* | timechart limit=0 count by productId
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/vJcRW74.png)
 
 ## Challenge 3-g (2 points)
 ```
 sourcetype=access_* productId=* | timechart count by clientip
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/bObFDds.png)
 
 ## Challenge 3-h (2 points)
 ```
 sourcetype=access_* productId=* | timechart count by clientip useother=false
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/NPipfyv.png)
 
 ## Challenge 3-i (2 points)
 ```
 sourcetype=access_* productId=* | timechart span=1h sum(bytes)
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/UM6SPaR.png)
 
 ## Challenge 4-a (4 points)
 ```
 sourcetype=access_* | rex "(?<mymethod>(GET|POST))" | table mymethod, method, _raw
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/guZS5M7.png)
 
 ## Challenge 4-b (4 points)
 ```
 sourcetype=access_* action | 
     rex "(GET|POST) /cart.do\?action=(?<myaction>[a-z]*)" |
     table myaction, action, _raw
+```
+![image](http://imgur.com/JBxOIOy)
