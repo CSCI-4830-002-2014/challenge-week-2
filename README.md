@@ -4,7 +4,7 @@ Logan Bates
 
 # How many points have you earned?
 
-5/100
+36/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -16,29 +16,29 @@ Logan Bates
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![image](Checkpoint1.png?raw=true)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![image](Checkpoint2.png?raw=true)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![image](Checkpoint3.png?raw=true)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![image](Checkpoint4.png?raw=true)
 
 ## Study Questions (3 points x 4 = 12 points)
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+Each www refers to a different web server that can be accessed. There are probably several to deal with heavy traffic on the web servers.
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+This is an HTTP status code which represents a transaction that has successfully completed. 
 
 ### Q3. (3 points)
 
