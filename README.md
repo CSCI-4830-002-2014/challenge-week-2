@@ -8,6 +8,8 @@ Michael Fyk
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
+Note: I believe the queries are all correct but the screenshots sometimes show exactly double what the expected answer from the course screenshot is. This is likely because I uploaded the data file twice and each event was indexed twice. Also for one of the purchase-related questions I put in "status=200" even though it appears that the query to get the example screenshot did not (as a different status would not be a successful purchase).
+
 # Show and tell (10 points)
 
 [Build a Wireless Home Security System With an Arduino](http://lifehacker.com/build-a-wireless-home-security-system-with-an-arduino-1619435213)
