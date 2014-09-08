@@ -107,44 +107,44 @@ sourcetype=access_* | stats dc(productId) as "Number of unique products", values
 
 ## Challenge 2-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | table clientip, action, productId, date_month, date_mday, date_wday
 ```
-![image](image.png?raw=true)
+![image](ch2a.png?raw=true)
 
 ## Challenge 2-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | table clientip, action, productId, date_month, date_mday, date_wday | top date_wday limit=3
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
 ![image](image.png?raw=true)
 
 
 ## Challenge 2-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do date_wday="friday" | table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do date_wday="friday" action="purchase" | table clientip, action, productId, date_month, date_mday, date_wday | top productId
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do action="purchase" | table clientip, action, productId, date_month, date_mday, date_wday | top productId limit=1
 ```
 ![image](image.png?raw=true)
 
 ## Challenge 2-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do action="purchase" | table clientip, action, productId, date_month, date_mday, date_wday | top productId by date_wday limit=1
 ```
 ![image](image.png?raw=true)
 
