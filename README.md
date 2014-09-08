@@ -4,7 +4,7 @@ Chris Wittenberg
 
 # How many points have you earned?
 
-96/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -183,7 +183,7 @@ sourcetype=access_* productId=*| timechart count(clientip) As "UniqueIDs" by hos
 ```
 sourcetype=access_* productId=*| timechart count(action) As "UniqueID's" by productId
 ```
-![image](C2Challege3e.png?raw=true)
+![image](C2Challenge3e.png?raw=true)
 
 ## Challenge 3-f (2 points)
 ```
