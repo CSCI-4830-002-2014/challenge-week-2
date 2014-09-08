@@ -94,20 +94,20 @@ sourcetype=access_* | stats max(bytes)
 ```
 sourcetype=access_* | stats max(bytes) AS MAX
 ```
-![image](http://imgur.com/l8V8Dd9)
+![image](http://imgur.com/l8V8Dd9.png)
 
 ## Challenge 1-h (2 points)
 ```
 sourcetype=access_* | stats max(bytes) AS "MAX", min(bytes) AS "MIN", avg(bytes) AS "AVG"
 
 ```
-![image](http://imgur.com/sGZmxPY)
+![image](http://imgur.com/sGZmxPY.png)
 
 ## Challenge 1-i (2 points)
 ```
 sourcetype=access_* stats  dc(productId) as NumberofUniqueProducts ,values(productId) AS UniqueProductIds
 ```
-![image](http://imgur.com/pdVpGgV)
+![image](http://imgur.com/pdVpGgV.png)
 
 
 ## Challenge 2-a (2 points)
@@ -175,7 +175,7 @@ sourcetype=access_* productId=* | timechart span=1h dc(clientip) AS "UniqueIPs"
 ```
 sourcetype=access_* productId=* | timechart count by host
 ```
-![image](http://imgur.com/mGTXM4e)
+![image](http://imgur.com/mGTXM4e.png)
 
 ## Challenge 3-e (2 points)
 ```
@@ -219,4 +219,4 @@ sourcetype=access_* action |
     rex "(GET|POST) /cart.do\?action=(?<myaction>[a-z]*)" |
     table myaction, action, _raw
 ```
-![image](http://imgur.com/JBxOIOy)
+![image](http://imgur.com/JBxOIOy.png)
