@@ -114,44 +114,44 @@ sourcetype=access_* stats  dc(productId) as NumberofUniqueProducts ,values(produ
 ```
 sourcetype=access_* productId cart.do | top date_wday limit=3
 ```
-![image](.png)
+![image](http://imgur.com/KdYRwnj.png)
 
 ## Challenge 2-b (2 points)
 ```
 sourcetype=access_* productId cart.do | top productId
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/cK6LvhT.png)
 
 ## Challenge 2-c (2 points)
 ```
 sourcetype=access_* productId cart.do date_wday=friday | top productId
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/6X57HQ4.png)
 
 
 ## Challenge 2-d (2 points)
 ```
 sourcetype=access_* productId cart.do date_wday=friday action=purchase | top productId
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/1MSUz8V.png)
 
 ## Challenge 2-e (2 points)
 ```
 sourcetype=access_* productId cart.do action=purchase | top productId limit=1
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/ELNN7We.png)
 
 ## Challenge 2-f (2 points)
 ```
 sourcetype=access_* productId cart.do action=purchase| table clientip, action, productId, date_month, date_mday, date_wday | top limit=1 productId
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/yjMm7rS.png)
 
 ## Challenge 2-g (2 points)
 ```
 sourcetype=access_* productId cart.do action=purchase | table clientip, action, productId, date_month, date_mday, date_wday | top limit=1 productId by date_wday
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/Kjzjga3.png)
 
 ## Challenge 3-a (2 points)
 ```
