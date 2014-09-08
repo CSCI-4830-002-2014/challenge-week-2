@@ -1,16 +1,16 @@
 # Name
 
-write-your-name
+Logan Bates
 
 # How many points have you earned?
 
-0/100
+5/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Use NodeJS and Arduino to build a weather display](http://www.node-disassemble.com/2014/09/04/lcd-weather-display/)
 
 # Checkpoints
 
