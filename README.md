@@ -1,10 +1,10 @@
 # Name
 
-write-your-name
+Michael Aaron
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -106,14 +106,14 @@ sourcetype=access_* | stats  dc(productId) as NumberofUniqueProducts ,values(pro
 ```
 sourcetype=access_* productId cart.do | 
 	table clientip, action, productId, date_month, date_mday, date_wday | top limit=10 clientip
-	```
+```
 ![image](http://i.imgur.com/7DL2Hrc.png)
 
 ## Challenge 2-b (2 points)
 ```
 sourcetype=access_* productId cart.do | 
 	table clientip, action, productId, date_month, date_mday, date_wday | top limit=3 date_wday
-	```
+```
 ![image](http://i.imgur.com/L4cAaEM.png)
 
 ## Challenge 2-c (2 points)
@@ -219,4 +219,4 @@ sourcetype=access_* action |
     rex "(GET|POST) /cart.do\?action=(?<myaction>addtocart|purchase|view|changequantity)" |
     table myaction, action, _raw
 ```
-![image](http://imgur.com/9QP2kEB)
+![image](http://imgur.com/9QP2kEB.png)
