@@ -1,213 +1,227 @@
 # Name
 
-write-your-name
+Niklas Fejes
 
 # How many points have you earned?
 
-0/100
-
-(Make your own calculation and replace the number 0 with the points you think you've earned.)
+100/100
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Rubik's Cube Solver](http://www.instructables.com/id/Rubiks-Cube-Solver/)
 
 # Checkpoints
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint1.png?raw=true)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint2.png?raw=true)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint3.png?raw=true)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint4.png?raw=true)
 
 ## Study Questions (3 points x 4 = 12 points)
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+The `www1`, `www2` and `www3` host names are typically used to mirror a site so that
+the load balance is distributed over several servers. The `www*` host names on the 
+`buttercupgames` website are basically different servers hosting the same site, and that is
+why they produce three separate logs.
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+The `status=200` inidicates that only events with HTTP status code 200 (OK) should be
+included, which filters out erroneous events from the search.
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+The pipe operator allows for clear distinctions between individual steps in the search. 
+It also makes is easier to chain together searches with the available tools 
+(`stats`, `top` etc.).
 
 ### Q4. (3 points)
 
-fill-in-your-answer
+The raw server logs may be the only available option if you want to analyze purchases 
+for a store that has not yet implemented a structural database. The data from the server
+logs can also be used to cross-check a structural database or add information to the
+database that has not been saved previously.
 
 # Challenges
 
 ## Challenge 1-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count
 ```
-![image](image.png?raw=true)
+![image](challenge1a.png?raw=true)
 
 ## Challenge 1-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events"
 ```
-![image](image.png?raw=true)
+![image](challenge1b.png?raw=true)
 
 ## Challenge 1-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events", count(eval(action="purchase")) AS "Purchases"
 ```
-![image](image.png?raw=true)
+![image](challenge1c.png?raw=true)
 
 ## Challenge 1-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events", count(eval(action="purchase")) AS "Purchases", count(eval(action="addtocart")) AS "AddToCart", count(eval(action="remove")) AS "Removes"
 ```
-![image](image.png?raw=true)
+![image](challenge1d.png?raw=true)
 
 ## Challenge 1-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](challenge1e.png?raw=true)
 
 ## Challenge 1-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](challenge1e.png?raw=true)
 
 ## Challenge 1-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) AS "MAX"
 ```
-![image](image.png?raw=true)
+![image](challenge1g.png?raw=true)
 
 ## Challenge 1-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) AS "MAX", min(bytes) AS "MIN", avg(bytes) AS "AVG"
 ```
-![image](image.png?raw=true)
+![image](challenge1h.png?raw=true)
 
 ## Challenge 1-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats dc(productId) AS "NumberOfUniqueProducts", values(productId) AS "UniqueProducts"
 ```
-![image](image.png?raw=true)
+![image](challenge1i.png?raw=true)
 
 
 ## Challenge 2-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | top clientip
 ```
-![image](image.png?raw=true)
+![image](challenge2a.png?raw=true)
 
 ## Challenge 2-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | top limit=3 date_wday
 ```
-![image](image.png?raw=true)
+![image](challenge2b.png?raw=true)
 
 ## Challenge 2-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do | top productId
 ```
-![image](image.png?raw=true)
+![image](challenge2c.png?raw=true)
 
 
 ## Challenge 2-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do date_wday=friday | top productId
 ```
-![image](image.png?raw=true)
+![image](challenge2d.png?raw=true)
 
 ## Challenge 2-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do date_wday=friday action=purchase | top productId
 ```
-![image](image.png?raw=true)
+![image](challenge2e.png?raw=true)
 
 ## Challenge 2-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do action=purchase | top limit=1 productId
 ```
-![image](image.png?raw=true)
+![image](challenge2f.png?raw=true)
 
 ## Challenge 2-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId cart.do action=purchase | top limit=1 productId by date_wday
 ```
-![image](image.png?raw=true)
+![image](challenge2g.png?raw=true)
 
 ## Challenge 3-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count
 ```
-![image](image.png?raw=true)
+![image](challenge3a.png?raw=true)
 
 ## Challenge 3-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart dc(clientip) AS "UniqueIPs"
 ```
-![image](image.png?raw=true)
+![image](challenge3b.png?raw=true)
 
 ## Challenge 3-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart span=1h dc(clientip) AS "UniqueIPs"
 ```
-![image](image.png?raw=true)
+![image](challenge3c.png?raw=true)
 
 ## Challenge 3-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by host
 ```
-![image](image.png?raw=true)
+![image](challenge3d.png?raw=true)
 
 ## Challenge 3-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by productId
 ```
-![image](image.png?raw=true)
+![image](challenge3e.png?raw=true)
 
 ## Challenge 3-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart limit=0 count by productId
 ```
-![image](image.png?raw=true)
+![image](challenge3f.png?raw=true)
 
 ## Challenge 3-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by clientip
 ```
-![image](image.png?raw=true)
+![image](challenge3g.png?raw=true)
 
 ## Challenge 3-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by clientip useother=false
 ```
-![image](image.png?raw=true)
+![image](challenge3h.png?raw=true)
 
 ## Challenge 3-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart span=1h sum(bytes)
 ```
-![image](image.png?raw=true)
+*Note:* To get the same numbers as the challenge description the `productId=*` should be 
+removed. However, this violates the query form specification.
+
+![image](challenge3i.png?raw=true)
 
 ## Challenge 4-a (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | rex "(?<mymethod>(GET|POST))" | table mymethod, method, _raw
 ```
-![image](image.png?raw=true)
+![image](challenge4a.png?raw=true)
 
 ## Challenge 4-b (4 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* action | 
+    rex "(GET|POST) /cart.do\?action=(?<myaction>[a-z]*)" |
+    table myaction, action, _raw
+```
+![image](challenge4b.png?raw=true)
