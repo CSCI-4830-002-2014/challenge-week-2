@@ -64,7 +64,7 @@ sourcetype=access_* | stats count
 ```
 sourcetype=access_* | stats count as "Events"
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/6m5gZVD.png)
 
 ## Challenge 1-c (2 points)
 ```
