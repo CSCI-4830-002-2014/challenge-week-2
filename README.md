@@ -76,38 +76,38 @@ sourcetype=access_* | stats count AS "Events", c(eval(action="purchase")) AS "Pu
 ```
 sourcetype=access_* | stats count AS "Events", c(eval(action="purchase")) AS "Purchased", c(eval(action="addtocart")) AS "Add to Cart",c(eval(action="remove")) AS "Remove"
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/HIgaHcq.png)
 
 ## Challenge 1-e (2 points)
 ```
 sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/wmaDqqn.png)
 
 ## Challenge 1-f (2 points)
 ```
 sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/wmaDqqn.png)
 
 ## Challenge 1-g (2 points)
 ```
 sourcetype=access_* | stats max(bytes) AS MAX
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/l8V8Dd9)
 
 ## Challenge 1-h (2 points)
 ```
 sourcetype=access_* | stats max(bytes) AS "MAX", min(bytes) AS "MIN", avg(bytes) AS "AVG"
 
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/sGZmxPY)
 
 ## Challenge 1-i (2 points)
 ```
 sourcetype=access_* stats  dc(productId) as NumberofUniqueProducts ,values(productId) AS UniqueProductIds
 ```
-![image](image.png?raw=true)
+![image](http://imgur.com/pdVpGgV)
 
 
 ## Challenge 2-a (2 points)
