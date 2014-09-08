@@ -28,7 +28,9 @@ Michael Fyk
 
 ## Checkpoint 4 (5 points)
 
-![N/A Incomplete ("Could not find access_combined_wcookie" error)](image.png?raw=true)
+![image](image.png?raw=true)
+
+N/A Incomplete ("Could not find access combined wcookie" error)
 
 ## Study Questions (3 points x 4 = 12 points)
 
