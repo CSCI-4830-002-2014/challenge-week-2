@@ -34,7 +34,9 @@ Jake White
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+In the tutorial data provided by Splunk, what do the host names www1, www2, and www3 mean? Why are there three?
+- Different servers
+
 
 ### Q2. (3 points)
 
@@ -42,7 +44,9 @@ fill-in-your-answer
 
 ### Q3. (3 points)
 
-it makes the search queries easier to read and manipulate
+What is your best guess as the rationale behind the heavy use of the | (pipe) operator in Splunk queries?
+it makes the search queries easier to read and manipulate. 
+is intended for linix users/ splunk is trying to appeal to computer scientists.
 
 ### Q4. (3 points)
 
