@@ -46,7 +46,7 @@ So that you may do many different steps of commands, and be able to chip and chi
 
 ### Q4. (3 points)
 
-Doing database entries like that can take a lot of server time and make our clients experience worse by making it slower.
+Doing database entries like that can take a lot of server time and make our clients experience worse by making it slower and you can do more complex queries after the fact.
 
 # Challenges
 
@@ -70,7 +70,8 @@ sourcetype=access_* | stats count as Events, count(eval(action="purchase")) as P
 
 ## Challenge 1-d (2 points)
 ```
-sourcetype=access_* | stats count as Events, count(eval(action="purchase")) as Purchases, count(eval(action="addtocart")) as AddToCarts, count(eval(action="remove")) as Removes```
+sourcetype=access_* | stats count as Events, count(eval(action="purchase")) as Purchases, count(eval(action="addtocart")) as AddToCarts, count(eval(action="remove")) as Removes
+```
 ![image](1d.png?raw=true)
 
 ## Challenge 1-e (2 points)
