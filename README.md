@@ -10,7 +10,7 @@ Irfan Nadiadi
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Concrete 3D printer used to build castle](http://www.geekexchange.com/concrete-3d-printer-used-to-build-castle-134449.html)
 
 # Checkpoints
 
@@ -158,49 +158,49 @@ sourcetype=access_* productId=* | timechart count
 ```
 sourcetype=access_* productId=* | timechart distinct_count(clientip) AS UniqueIPs
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/qiy8atP.png)
 
 ## Challenge 3-c (2 points)
 ```
 sourcetype=access_* productId=* | timechart span=6h distinct_count(clientip) AS UniqueIPs
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/9vWqHcQ.png)
 
 ## Challenge 3-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by host
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/kNGTlVd.png)
 
 ## Challenge 3-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by productId
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/vBeDBJX.png)
 
 ## Challenge 3-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by productId limit=16
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/o566CJq.png)
 
 ## Challenge 3-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by clientip
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/WQAeRS7.png)
 
 ## Challenge 3-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=* | timechart count by clientip useother=false
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/TNRrNT3.png)
 
 ## Challenge 3-i (2 points)
 ```
 sourcetype=access_* [fill-in-the-rest]
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/OvOCx3O.png)
 
 ## Challenge 4-a (4 points)
 ```
