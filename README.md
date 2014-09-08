@@ -10,25 +10,25 @@ Jake White
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Build a Universal Smart Remote Control with an Arduino](http://lifehacker.com/build-a-universal-smart-remote-control-with-an-arduino-1627481048)
 
 # Checkpoints
 
 ## Checkpoint 1 (5 points)
 
-![image](http://imgur.com/2XMPilw)
+![image](http://i.imgur.com/wuER8cu.png?1)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/iMs8VcZ.png?1)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/dJus5Wb.png?1)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/r8uCZXY.png?1)
 
 ## Study Questions (3 points x 4 = 12 points)
 
@@ -38,11 +38,11 @@ fill-in-your-answer
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+"status=200" indicates a sucessfull purchase 
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+it makes the search queries easier to read and manipulate
 
 ### Q4. (3 points)
 
@@ -52,9 +52,9 @@ fill-in-your-answer
 
 ## Challenge 1-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count
 ```
-![image](image.png?raw=true)
+![image](http://i.imgur.com/vwwnBmS.png?1)
 
 ## Challenge 1-b (2 points)
 ```
