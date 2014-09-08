@@ -16,19 +16,19 @@ Justin McBride
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint1.png?raw=true)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint2.png?raw=true)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint3.png?raw=true)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![image](checkpoint4.png?raw=true)
 
 ## Study Questions (3 points x 4 = 12 points)
 
