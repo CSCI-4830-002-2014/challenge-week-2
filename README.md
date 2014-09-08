@@ -16,19 +16,19 @@ Manpreet Singh
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/zXvwRM4.png)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/KbEOhg2)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/El0FY55)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/6q4J3D9)
 
 ## Study Questions (3 points x 4 = 12 points)
 
