@@ -34,19 +34,19 @@ Manpreet Singh
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+The three names probably represent three different servers. There are three of these because having multiple servers helps in case of heavy traffic.
 
 ### Q2. (3 points)
 
-fill-in-your-answer
+Including “status=200” in queries helps ensure that only thse results are retrned which represent successfully completed transactions.
 
 ### Q3. (3 points)
 
-fill-in-your-answer
+Using the pipe operator in queries helps in cases where the search parameters are either unknown or variable, and need information from the results of another query etc. The alternative would be to run a search, use the results of that search for another query and so  on. This would take a lot of time and would be prone to error.
 
 ### Q4. (3 points)
 
-fill-in-your-answer
+Saving all the product purchase behavior in sructural databases would lead to a huge and slow-to-traverse database, which is highly undesirable. Also
 
 # Challenges
 
