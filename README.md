@@ -1,12 +1,10 @@
 # Name
 
-write-your-name
+Austin Wood
 
 # How many points have you earned?
 
-0/100
-
-(Make your own calculation and replace the number 0 with the points you think you've earned.)
+100/100
 
 # Show and tell (10 points)
 
@@ -16,19 +14,19 @@ write-your-name
 
 ## Checkpoint 1 (5 points)
 
-![image](image.png?raw=true)
+![checkpoint 1](images/splunk2_cp1.png?raw=true)
 
 ## Checkpoint 2 (5 points)
 
-![image](image.png?raw=true)
+![checkpoint 2](images/splunk2_cp2.png?raw=true)
 
 ## Checkpoint 3 (5 points)
 
-![image](image.png?raw=true)
+![checkpoint 3](images/splunk2_cp3.png?raw=true)
 
 ## Checkpoint 4 (5 points)
 
-![image](image.png?raw=true)
+![checkpoint 4](images/splunk2_cp4.png?raw=true)
 
 ## Study Questions (3 points x 4 = 12 points)
 
