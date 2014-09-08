@@ -5,13 +5,13 @@ Dawson Botsford
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # Show and tell (10 points)
 
-[Powerduino](http://lifehacker.com/build-your-own-smart-powerstrip-with-an-arduino-1573480006)
+[Photoresistor color sensor](http://www.georgegardner.info/electronics/arduino/photoresistor-color-sensing-with-the-arduino.html)
 
 # Checkpoints
 
