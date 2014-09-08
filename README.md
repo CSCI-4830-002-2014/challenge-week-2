@@ -52,57 +52,57 @@ Server logs may be the only thing recoverable after server crashes or accidental
 
 ## Challenge 1-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count
 ```
-![image](image.png?raw=true)
+![image](ch1a.png?raw=true)
 
 ## Challenge 1-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count | rename count as "Events"
 ```
-![image](image.png?raw=true)
+![image](ch1b.png?raw=true)
 
 ## Challenge 1-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count, count(eval(action="purchase")) as "Purchases" | rename count as "Events"
 ```
-![image](image.png?raw=true)
+![image](ch1c.png?raw=true)
 
 ## Challenge 1-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count, count(eval(action="purchase")) as "Purchases", count(eval(action="remove")) as "Remove", count(eval(action="addtocart")) as "Added" | rename count as "Events"
 ```
-![image](image.png?raw=true)
+![image](ch1d.png?raw=true)
 
 ## Challenge 1-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](ch1e.png?raw=true)
 
 ## Challenge 1-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![image](ch1f.png?raw=true)
 
 ## Challenge 1-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) as MAX
 ```
-![image](image.png?raw=true)
+![image](ch1g.png?raw=true)
 
 ## Challenge 1-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) as MAX, min(bytes) as MIN, avg(bytes) as AVG
 ```
-![image](image.png?raw=true)
+![image](ch1h.png?raw=true)
 
 ## Challenge 1-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats dc(productId) as "Number of unique products", values(productId) as "Unique Product IDs"
 ```
-![image](image.png?raw=true)
+![image](ch1i.png?raw=true)
 
 
 ## Challenge 2-a (2 points)
