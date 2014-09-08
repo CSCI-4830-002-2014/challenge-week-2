@@ -52,57 +52,57 @@ Saving all the product purchase behavior in sructural databases would lead to a 
 
 ## Challenge 1-a (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count 
 ```
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/jqHknYi.png)
 
 ## Challenge 1-b (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events"
 ```
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/34tb0ly)
 
 ## Challenge 1-c (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events", count(eval(action="purchase")) AS "Purchases"
 ```
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/vNzTbtL)
 
 ## Challenge 1-d (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats count AS "Events", count(eval(action="purchase")) as "Purchases", count(eval(action="addtocart")) as "AddToCarts", count(eval(action="remove")) as "Removes"
 ```
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/4EST5Rd)
 
 ## Challenge 1-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/EvyCDcJ)
 
 ## Challenge 1-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes)
 ```
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/iO9jIVc)
 
 ## Challenge 1-g (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) AS "MAX"
 ```
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/UUdzUc9)
 
 ## Challenge 1-h (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats max(bytes) AS "MAX", min(bytes) AS "MIN", avg(bytes) AS "AVG"
 ```
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/JYucKJk)
 
 ## Challenge 1-i (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* | stats dc(productId) as "NumberofUniqueProducts", values(productId) as "UniqueProductIds"
 ```
-![image](image.png?raw=true)
+![Imgur](http://i.imgur.com/wK6SWeB)
 
 
 ## Challenge 2-a (2 points)
