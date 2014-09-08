@@ -181,13 +181,13 @@ sourcetype=access_* productId=*| timechart count(clientip) As "UniqueIDs" by hos
 
 ## Challenge 3-e (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count(action) As "UniqueID's" by productId
 ```
 ![image](C2Challege3e.png?raw=true)
 
 ## Challenge 3-f (2 points)
 ```
-sourcetype=access_* [fill-in-the-rest]
+sourcetype=access_* productId=*| timechart count(action) As "UniqueID's" by productId limit=16
 ```
 ![image](C2Challenge3f.png?raw=true)
 
