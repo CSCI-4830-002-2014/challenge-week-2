@@ -1,6 +1,6 @@
 # Name
 
-write-your-name
+Ian Ker-Seymer
 
 # How many points have you earned?
 
@@ -10,7 +10,7 @@ write-your-name
 
 # Show and tell (10 points)
 
-[title-of-the-article](http://link-to-an-interesting-article-about-a-cool-use-of-arduino)
+[Build a Wireless Home Security System With an Arduino](http://lifehacker.com/build-a-wireless-home-security-system-with-an-arduino-1619435213)
 
 # Checkpoints
 
