@@ -1,6 +1,7 @@
 # Name
 
 Dawson Botsford
+(received help from Brian Newsom on some)
 
 # How many points have you earned?
 
@@ -37,7 +38,7 @@ Data issues fixed for the challenges, but exact search integer results were stil
 
 ### Q1. (3 points)
 
-fill-in-your-answer
+World Wide Web 1, 2, and 3. These are the three web hosts that traffic can be routed through to distribute traffic better. This balances the loads.
 
 ### Q2. (3 points)
 
@@ -49,7 +50,7 @@ Similar to bash, the pipe concantenates actions so that the output of one filter
 
 ### Q4. (3 points)
 
-fill-in-your-answer
+If your operation is on a massive scale, you cannot simply save each thing into a database due to time, storage capacity, and other resources.
 
 # Challenges
 
