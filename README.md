@@ -2,12 +2,6 @@
 
 Jake White
 
-# How many points have you earned?
-
-40/100
-
-(Make your own calculation and replace the number 0 with the points you think you've earned.)
-
 # Show and tell (10 points)
 
 [Build a Universal Smart Remote Control with an Arduino](http://lifehacker.com/build-a-universal-smart-remote-control-with-an-arduino-1627481048)
